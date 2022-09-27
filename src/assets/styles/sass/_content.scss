@@ -1,0 +1,213 @@
+.layout-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    // padding: 7rem 2rem 2rem 4rem;
+    padding: 5rem 2rem 2rem 4rem;
+    transition: margin-left $transitionDuration;
+    // background-color: yellow;
+}
+
+.layout-main {
+    flex: 0 1 auto;
+    height: auto;
+    // background-color: rgb(175, 175, 175);
+}
+/****       BUTTON CUSTOM                *****/
+.btn-ac{
+    background: #045692;
+    width: 152px;
+    height: 40px;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  .btn-ac:hover{
+    background: #045692;
+    width: 152px;
+    height: 40px;
+    font-size: 14.5px;
+    border-radius: 0;
+    color: #FFFFFF;
+  }
+
+  .btn-ac-light{
+    background:  #F6F7FB;
+    width: 152px;
+    height: 40px;
+    border-radius: 0;
+    color: #284064;
+    font-size: 14px;
+    border: 2px solid #284064;
+  }
+  .btn-ac-light:hover{
+    background: #284064;
+    width: 152px;
+    height: 40px;
+    font-size: 14.5px;
+    border-radius: 0;
+    color: #F6F7FB;
+  }
+
+  /*******       MULTISELECT CUSTOMIZATION          *************/
+  .p-multiselect{
+    width: 100%;
+    border-radius: 0px !important;
+}
+.p-checkbox .p-checkbox-box{
+    height: 16px;
+    width: 16px;
+    border-radius: 0px !important;
+    align-items: center;
+}
+.p-checkbox{
+    align-items: center;
+    justify-content: center;
+}
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+    transition-duration: 0.2s;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+
+.p-multiselect-panel .p-multiselect-header{
+    padding: 0.5rem 8px;
+    border-radius: 0px;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item .p-highlight {
+    color: #000000;
+    background: #1890FF;
+    border-color:#1890FF;
+}
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+    outline: 0 none;
+    outline-offset: 0;
+    /* box-shadow: 0 0 0 0.2rem #c7d2fe; */
+    border-color: #1890FF;
+    background: #1890FF;
+}
+.p-checkbox .p-checkbox-box .p-highlight {
+    border-color: #1890FF !important;
+    background: #1890FF !important;
+}
+.p-checkbox-box {
+    border-color: #1890FF;
+    background: #1890FF;
+    accent-color: #1890FF;
+}
+.p-checkbox:hover .p-checkbox-box:hover {
+    border-color: #1890FF;
+    background: #1890FF;
+    color:#fff;
+}
+.p-checkbox-icon{
+    background: #1890FF;
+    border-color: #1890FF;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+    color: #1890FF;
+}
+.p-multiselect-label-container{
+  overflow: visible;
+}
+.p-multiselect-close{
+  display: none!important;
+}
+.p-multiselect-label{
+    padding: 0.5rem 0.75rem !important;
+    overflow: hidden;
+    white-space: break-spaces!important;
+    max-height: 42px;
+    max-height: 48px;
+}
+
+.p-multiselect-token{
+    border-radius: 0px !important;
+    color: #1890FF;
+    background: #DCEEFF !important;
+    border: 1px solid #1890FF;
+    padding: 0.1rem 0.75rem !important;
+    margin-bottom: 0.2rem;
+}
+.p-multiselect-token-label{
+    border-radius: 0px !important;
+    color: #1890FF;
+    font-size: 14px;
+    font-weight: 400;
+    /* padding: 0.1rem 0.75rem !important; */
+    font-family: 'Open Sans';
+}
+.pi-times-circle{
+    margin: -1.4rem -1.2rem 0.5rem 0;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/*------------------------------------------------------------------*/
+/********** RIGHT SIDEBAR CSS**********/
+.bgWhite{
+    background: #ffffff!important;
+    margin-left: -15px!important;
+  }
+  .rhombus {
+    position:absolute;
+    width:42px;
+    height:44px;
+    border-radius:50%;
+    font-size:16px;
+    background-color:#F6F7FB;
+    /* color:#f1f1f2; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* top:calc(100px - 22px); */
+    margin-top: 100px;
+    /* left:calc(100% - 22px); */
+    margin-left: -30px;
+    z-index:3;
+    cursor:pointer;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  .fa-chevron-left {
+    padding-right: 21px;
+  }
+  .fa-chevron-right {
+    margin-left:24px;
+  }
+  .hide {
+    display:none;
+  }
+    
+    .right-arrow{
+      margin-top:88px;
+    }
+    .question-create{
+      display: flex;
+    }
+  
+  .right-sidebar{
+    width: 20%;
+    background-color: #ffffff;
+    height: 100%;
+    margin-left: 16px;
+    padding: 0 16px 16px 16px;
+  }
+    .right-sidebar h4{
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #0D9344;
+    }
+    .right-sidebar p{
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #4F4F4F;
+    }
+/* -------------------------------------------------- */
